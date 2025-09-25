@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanThreads - Modern Clothing Store</title>
+    <!-- Favicon link -->
+    <link rel="icon" href="https://placehold.co/32x32/1e40af/ffffff?text=T" type="image/x-icon">
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* Lighter gray background */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-gray-800">
+                Urban<span class="text-orange-500">Threads</span>
+            </a>
+            
+            <!-- Mobile Menu Button & Cart Icon -->
+            <div class="flex items-center space-x-4">
+                <div class="relative">
+                    <button id="cart-button" class="p-2 text-gray-600 hover:text-orange-500 focus:outline-none rounded-md transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l1.6-8H5.4L3 3M7 13L5.4 18.2M17 13l1.6 5.2M9 21a1 1 0 100-2 1 1 0 000 2zM17 21a1 1 0 100-2 1 1 0 000 2z"></path>
+                        </svg>
+                    </button>
+                    <span id="cart-counter" class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-red-600 rounded-full transform translate-x-1/2 -translate-y-1/2">0</span>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden p-2 text-gray-600 focus:outline-none focus:text-gray-900 rounded-md transition-colors duration-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#shop" class="text-gray-600 hover:text-orange-500 font-medium transition-colors duration-200">Shop</a>
+                <a href="#collections" class="text-gray-600 hover:text-orange-500 font-medium transition-colors duration-200">Collections</a>
+                <a href="#contact" class="text-gray-600 hover:text-orange-500 font-medium transition-colors duration-200">Contact</a>
+            </nav>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md rounded-b-lg">
+            <nav class="flex flex-col px-6 py-4 space-y-2">
+                <a href="#shop" class="py-2 text-gray-800 hover:bg-gray-100 rounded-md px-4 transition-colors duration-200">Shop</a>
+                <a href="#collections" class="py-2 text-gray-800 hover:bg-gray-100 rounded-md px-4 transition-colors duration-200">Collections</a>
+                <a href="#contact" class="py-2 text-gray-800 hover:bg-gray-100 rounded-md px-4 transition-colors duration-200">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content container with padding -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section id="hero" class="bg-gray-800 text-white rounded-2xl p-8 md:p-16 mb-12 shadow-lg">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                        Discover Your Style.
+                    </h1>
+                    <p class="text-lg md:text-xl opacity-90 mb-6">
+                        We offer a curated collection of modern, sustainable, and high-quality clothing for every occasion.
+                    </p>
+                    <a href="#shop" class="inline-block bg-white text-gray-800 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition-colors duration-300">
+                        Shop Now
+                    </a>
+                </div>
+                <!-- Placeholder Image -->
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/222222/ffffff?text=Modern+Clothing" alt="Modern clothing design illustration" class="w-full h-auto rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section id="our-story" class="py-12 md:py-16">
+            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+                <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                    <!-- Placeholder Image -->
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="https://placehold.co/600x400/d1d5db/374151?text=Our+Mission" alt="A person looking at clothes" class="w-full h-auto rounded-xl shadow-lg">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Story</h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            At UrbanThreads, we believe fashion should be both stylish and conscious. We started with a simple idea: to create a brand that offers timeless pieces made from ethically sourced and sustainable materials. Every garment is designed with care to ensure it's not just a trend, but a lasting addition to your wardrobe.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Ethically sourced and produced</li>
+                            <li>Commitment to sustainability</li>
+                            <li>High-quality, durable fabrics</li>
+                            <li>Timeless, modern designs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="shop" class="py-12 md:py-16">
+            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Featured Products</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product Card 1 -->
+                    <div class="bg-gray-50 rounded-xl p-6 text-center shadow-md">
+                        <img src="https://placehold.co/400x400/f5f5f5/555555?text=Product+1" alt="Product 1" class="w-full h-auto mb-4 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">Classic T-Shirt</h3>
+                        <p class="text-gray-600 font-bold">₹999</p>
+                        <!-- Added data-name and data-price attributes -->
+                        <button class="add-to-cart-btn mt-4 bg-gray-800 text-white font-bold py-2 px-4 rounded-full hover:bg-gray-700 transition-colors duration-200" data-name="Classic T-Shirt" data-price="999">Add to Cart</button>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="bg-gray-50 rounded-xl p-6 text-center shadow-md">
+                        <img src="https://placehold.co/400x400/f5f5f5/555555?text=Product+2" alt="Product 2" class="w-full h-auto mb-4 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">Denim Jacket</h3>
+                        <p class="text-gray-600 font-bold">₹2,999</p>
+                         <!-- Added data-name and data-price attributes -->
+                        <button class="add-to-cart-btn mt-4 bg-gray-800 text-white font-bold py-2 px-4 rounded-full hover:bg-gray-700 transition-colors duration-200" data-name="Denim Jacket" data-price="2999">Add to Cart</button>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="bg-gray-50 rounded-xl p-6 text-center shadow-md">
+                        <img src="https://placehold.co/400x400/f5f5f5/555555?text=Product+3" alt="Product 3" class="w-full h-auto mb-4 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">Crewneck Sweater</h3>
+                        <p class="text-gray-600 font-bold">₹1,999</p>
+                         <!-- Added data-name and data-price attributes -->
+                        <button class="add-to-cart-btn mt-4 bg-gray-800 text-white font-bold py-2 px-4 rounded-full hover:bg-gray-700 transition-colors duration-200" data-name="Crewneck Sweater" data-price="1999">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section with Form -->
+        <section id="contact" class="py-12 md:py-16">
+            <div class="bg-gray-800 text-white rounded-2xl p-8 md:p-12 shadow-lg">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Stay in the loop</h2>
+                <p class="text-center text-lg mb-8 opacity-90">
+                    Sign up for our newsletter to get updates on new arrivals and exclusive offers.
+                </p>
+                <form id="contact-form" class="space-y-6 max-w-lg mx-auto">
+                    <div>
+                        <label for="name" class="block text-sm font-medium">Full Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-3 rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring focus:ring-orange-500 focus:ring-opacity-50 text-gray-900" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium">Email Address</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-3 rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring focus:ring-orange-500 focus:ring-opacity-50 text-gray-900" required>
+                    </div>
+                    <button type="submit" class="w-full bg-white text-gray-800 font-bold py-3 px-6 rounded-md shadow-md hover:bg-gray-200 transition-colors duration-300">
+                        Subscribe
+                    </button>
+                    <!-- Message box for form feedback -->
+                    <div id="message-box" class="hidden text-center mt-4 p-4 rounded-lg bg-green-500 text-white">
+                        Thank you for subscribing!
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 UrbanThreads. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-gray-900 bg-opacity-75">
+        <div class="relative bg-white p-8 rounded-lg shadow-xl max-w-lg w-full m-4">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <h3 class="text-2xl font-bold mb-4">Product Details</h3>
+            <!-- Dynamic content will be injected here -->
+            <div id="modal-content" class="text-gray-600">
+                <!-- Content will be generated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for mobile menu toggle, form submission, and new interactive features
+        
+        // --- Smooth Scrolling for Navigation ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            });
+        });
+
+        // --- Contact Form Submission ---
+        const contactForm = document.getElementById('contact-form');
+        const messageBox = document.getElementById('message-box');
+        
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent default form submission
+
+            // For this example, we'll just show a success message
+            messageBox.textContent = 'Thank you for subscribing!';
+            messageBox.classList.remove('hidden', 'bg-red-500');
+            messageBox.classList.add('bg-green-500');
+            contactForm.reset();
+
+            // Hide the message box after 5 seconds
+            setTimeout(() => {
+                messageBox.classList.add('hidden');
+            }, 5000);
+        });
+
+        // --- New Interactive Features: Shopping Cart and Modal ---
+        const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+        const cartCounter = document.getElementById('cart-counter');
+        const productModal = document.getElementById('product-modal');
+        const modalContent = document.getElementById('modal-content');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        let cartCount = 0;
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Increment cart counter and update display
+                cartCount++;
+                cartCounter.textContent = cartCount;
+                
+                // Get product details from data attributes
+                const productName = button.dataset.name;
+                const productPrice = button.dataset.price;
+                const productPriceFormatted = `₹${productPrice}`;
+
+                // Update the modal content with dynamic details
+                modalContent.innerHTML = `
+                    <div class="text-center">
+                        <img src="https://placehold.co/400x400/f5f5f5/555555?text=${encodeURIComponent(productName)}" alt="${productName}" class="w-full h-auto mb-4 rounded-lg mx-auto">
+                        <h4 class="text-xl font-bold mb-2">${productName}</h4>
+                        <p class="text-lg text-gray-800 font-semibold mb-4">${productPriceFormatted}</p>
+                        <p>This is a modal for viewing product details. This interaction demonstrates a more dynamic website experience.</p>
+                    </div>
+                `;
+
+                // Show a simple confirmation message on the button
+                const originalText = button.textContent;
+                button.textContent = "Added!";
+                button.classList.remove('bg-gray-800', 'hover:bg-gray-700');
+                button.classList.add('bg-green-600');
+
+                // Revert button text and color after 2 seconds
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.classList.remove('bg-green-600');
+                    button.classList.add('bg-gray-800', 'hover:bg-gray-700');
+                }, 2000);
+
+                // Show the product modal
+                productModal.style.display = 'flex';
+            });
+        });
+
+        // Close the product modal
+        closeModalBtn.addEventListener('click', () => {
+            productModal.style.display = 'none';
+        });
+
+        // Close modal if user clicks outside of it
+        window.addEventListener('click', (event) => {
+            if (event.target === productModal) {
+                productModal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
