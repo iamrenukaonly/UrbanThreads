@@ -1,0 +1,25 @@
+TransactionID,Date,Year,Month,Region,Category,Product,Salesperson,UnitsSold,UnitPrice,TotalSales,CostOfGoodsSold,Profit
+T10001,01-01-2023,2023,January,North,Electronics,Laptop,John Doe,5,1200,6000,4500,1500
+T10002,02-01-2023,2023,January,South,Apparel,T-Shirt,Jane Smith,20,15,300,120,180
+T10003,03-01-2023,2023,January,East,Home Goods,Lamp,Peter Jones,10,50,500,300,200
+T10004,04-01-2023,2023,January,West,Electronics,Mouse,Alice Williams,50,25,1250,800,450
+T10005,05-01-2023,2023,January,North,Apparel,Jeans,John Doe,8,60,480,250,230
+T10006,06-01-2023,2023,January,South,Home Goods,Mug,Jane Smith,30,10,300,100,200
+T10007,07-01-2023,2023,January,East,Electronics,Keyboard,Peter Jones,15,40,600,350,250
+T10008,08-01-2023,2023,January,West,Apparel,Hoodie,Alice Williams,12,45,540,280,260
+T10009,09-01-2023,2023,January,North,Electronics,Monitor,John Doe,3,300,900,600,300
+T10010,10-01-2023,2023,January,South,Home Goods,Chair,Jane Smith,2,150,300,180,120
+T10011,11-01-2023,2023,January,East,Electronics,Webcam,Peter Jones,25,30,750,450,300
+T10012,12-01-2023,2023,January,West,Apparel,Socks,Alice Williams,100,5,500,200,300
+T10013,13-01-2023,2023,January,North,Home Goods,Table,John Doe,1,200,200,120,80
+T10014,14-01-2023,2023,January,South,Electronics,Headphones,Jane Smith,18,70,1260,800,460
+T10015,15-01-2023,2023,January,East,Apparel,Sweatshirt,Peter Jones,6,55,330,200,130
+T10016,16-01-2023,2023,January,West,Home Goods,Bookcase,Alice Williams,4,100,400,250,150
+T10017,17-01-2023,2023,January,North,Electronics,Tablet,John Doe,7,400,2800,2000,800
+T10018,18-01-2023,2023,January,South,Apparel,Dress,Jane Smith,3,80,240,150,90
+T10019,19-01-2023,2023,January,East,Home Goods,Coffee Table,Peter Jones,2,120,240,150,90
+T10020,20-01-2023,2023,January,West,Electronics,Smartwatch,Alice Williams,9,180,1620,1000,620
+...
+[More than 10,000 rows of similar data will follow here]
+...
+T10000,31-12-2024,2024,December,West,Apparel,Hat,Alice Williams,25,20,500,250,250
